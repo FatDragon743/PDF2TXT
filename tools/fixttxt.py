@@ -6,7 +6,7 @@ Created on 2018年6月14日
 '''
 
 import json
-from translate import Translator
+# from translate import Translator
 from tools.translation import google_translate_EtoC
 from tools.be_relaxing import be_relaxing
 import sys
@@ -37,11 +37,11 @@ def get_nice_txt(_input,_ouput):
                     else:
                         _print =_print +" "+_con
     print "get nice txt over"
-def translateGoogle2(text):
-    translator= Translator(to_lang="zh")
-    result = translator.translate(text)
-    print result
-    return result
+# def translateGoogle2(text):
+#     translator= Translator(to_lang="zh")
+#     result = translator.translate(text)
+#     print result
+#     return result
 def get_translate(_input,_ouput):
     print "start to translate"
     i=0
