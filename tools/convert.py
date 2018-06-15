@@ -32,7 +32,7 @@ def convert_pdf_to_txt(path,save_name):
         with open("%s"%save_name,"w") as f:#格式化字符串还能这么用！
             for i in str:
                 f.write(i)
-        print "%s Writing Succeed!"%save_name
+        print "%s to txt succeed!"%save_name
     except:
         print "Writing Failed!"
 

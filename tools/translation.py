@@ -29,7 +29,7 @@ def google_translate_EtoC(to_translate, from_language="en", to_language="ch-CN")
     #解析网页得到翻译结果   
     try:
         result = soup.find_all("div", {"class":"t0"})[0].text
-        print result[:16]
+#         print result[:16]
     except:
         print("Translation Failed!")
         result = ""
@@ -49,7 +49,7 @@ def google_translate_CtoE(to_translate, from_language="ch-CN", to_language="en")
     #解析网页得到翻译结果   
     try:
         result = soup.find_all("div", {"class":"t0"})[0].text
-        print result[:16]
+#         print result[:16]
     except:
         print("Translation Failed!")
         result = ""
