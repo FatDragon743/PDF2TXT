@@ -16,7 +16,11 @@ def convert_pdf_to_txt(path,save_name):
     codec = 'utf-8'
     laparams = LAParams()
     device = TextConverter(rsrcmgr, retstr, codec=codec, laparams=laparams)
-    fp = file(path, 'rb')
+    try:
+        fp = file(path, 'rb')
+        print "read %s succeed!"%path
+    except:
+        print "error in read input file"
     interpreter = PDFPageInterpreter(rsrcmgr, device)
     password = ""
     maxpages = 0
@@ -32,7 +36,7 @@ def convert_pdf_to_txt(path,save_name):
         with open("%s"%save_name,"w") as f:#格式化字符串还能这么用！
             for i in str:
                 f.write(i)
-        print "%s to txt succeed!"%save_name
+        print "%s write succeed!"%save_name
     except:
         print "Writing Failed!"
 

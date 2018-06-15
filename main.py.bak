@@ -4,7 +4,10 @@ Created on 2018年6月15日
 
 @author: Administrator
 '''
-import main.main
+import os
+import sys
+os.chdir(sys.path[0])
+# import main.main
 from tools.convert import convert_pdf_to_txt
 from tools.fixttxt import get_nice_txt, get_translate
 

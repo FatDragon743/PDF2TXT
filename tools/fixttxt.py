@@ -58,14 +58,14 @@ def get_translate(_input,_ouput):
                         tran = google_translate_EtoC(_con).encode("utf-8")
 #                         print ('\r'+str(i*100.0/_len))
                         num1 = i*100/_len
-                        s1 = "\r[%s%s]%d%%"%("*"*num1," "*(100-num1),num1)
+                        s1 = "\r[%s%s] %d%%"%("*"*num1," "*(100-num1),num1)
 #                         print('\b' * len(str(i*100.0/_len)), end='', flush=True)
                         sys.stdout.write(s1)
                         sys.stdout.flush()
                         be_relaxing()
 #                         print("翻译结果为：%s"%(tran))
                         f_w.write(tran+"\n")
-    print "translate over"
+    print "\ntranslate over"
 if __name__ == '__main__':
 #     get_nice_txt()
     get_translate()

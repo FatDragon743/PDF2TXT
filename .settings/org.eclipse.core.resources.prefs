@@ -1,5 +1,5 @@
 eclipse.preferences.version=1
-encoding//main/main.py=utf-8
+encoding//main/test_main.py=utf-8
 encoding//test/fixttxt.py=utf-8
 encoding//test/test.py=utf-8
 encoding//test/translation.py=utf-8
@@ -8,3 +8,4 @@ encoding//tools/be_relaxing.py=utf-8
 encoding//tools/convert.py=utf-8
 encoding//tools/fixttxt.py=utf-8
 encoding//tools/translation.py=utf-8
+encoding/main.py=utf-8
