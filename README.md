@@ -8,10 +8,11 @@
 如果认为翻译慢的，可以改变../tools/be_relaxing.py 文件中的random.randint(0,5)语句中的值，用于缩短随机等待时间，默认是0-5s
 
 ## Usage:
- python 2.7.*   
- pip install pdfminer==20140328   
- pip install requests   
- pip install beautifulsoup4
+python 2.7.*   
+pip install pdfminer==20140328   
+pip install requests   
+pip install beautifulsoup4
+
 
     Usage:   
      main.py [options] arg1 arg2
@@ -21,7 +22,7 @@
       -c, --convert 	convert pdf to txt   
       -f, --fixtxt  	fix txt to nice txt   
       -t, --translate  	translate txt from English to Chinese   
-      -a, --all			do it all   
+      -a, --all		do it all   
   
 ## Example:
     python2 .\main.py -a 1 2   
