@@ -1,3 +1,4 @@
+
 # -*- coding:utf-8 -*-  
 '''
 Created on 2018年6月15日
@@ -12,10 +13,10 @@ from tools.convert import convert_pdf_to_txt
 from tools.fixttxt import get_nice_txt, get_translate
 
 if __name__ == '__main__':
-    input_path = "../source/1.pdf"
-    output_path1 = "../result/1.txt"
-    output_path2 = "../result/2.txt"
-    output_path3 = "../result/3.txt"
+    input_path = "../source/1-s2.0-S002002551930297X-main.pdf"
+    output_path1 = "../result/12.txt"
+    output_path2 = "../result/22.txt"
+    output_path3 = "../result/32.txt"
     # 生成英文文件
     convert_pdf_to_txt(input_path,output_path1)
     # 整理文档： 换行 连接 
